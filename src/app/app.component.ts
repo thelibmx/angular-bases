@@ -6,5 +6,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'bases';
+
+  public title:string = 'mi primera aplicacion ';
+  public counter:number = 0;
+
+increaseBy():void {
+this.counter += 1;
+}
+
+decreaseBy():void{
+  this.counter -= 1;
+}
+
+restableceBy():void {
+  this.counter = 0;
+  }
+
+
+
+
+
 }
